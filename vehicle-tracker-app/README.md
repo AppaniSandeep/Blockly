@@ -1,16 +1,39 @@
-# React + Vite
+# 🚗 Vehicle Movement on a Map — React + React-Leaflet Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧭 Overview
 
-Currently, two official plugins are available:
+This project is a **frontend-only React application** that simulates a vehicle's movement along a predefined route on an interactive map. It is designed to demonstrate how to use **React, Leaflet, and Tailwind CSS** to visualize geospatial data dynamically.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app:
+- Displays an **interactive map**.
+- Renders a **complete route path**.
+- Simulates a **vehicle marker moving** along that route.
+- Provides **Play/Pause/Reset controls**.
+- Shows **real-time metadata** such as coordinates, timestamps, and speed.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Tech Stack
 
-## Expanding the ESLint configuration
+| Category | Tool / Technology | Purpose |
+|-----------|------------------|----------|
+| **Frontend Framework** | [React.js](https://react.dev/) | Component-based UI development |
+| **Map Library** | [React-Leaflet](https://react-leaflet.js.org/) + [Leaflet](https://leafletjs.com/) | Interactive map and route visualization |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/docs) | Utility-first, responsive design |
+| **Data Format** | JSON | Stores dummy route data |
+| **Dev Setup** | Node.js + Vite / Create React App | Project scaffolding and build tools |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🏗️ Setup Instructions
+
+### 1. Create the React Project
+
+Use Vite or Create React App:
+
+```bash
+# Using Vite (Recommended)
+npm create vite@latest vehicle-tracker-app -- --template react
+
+# OR using CRA
+npx create-react-app vehicle-tracker-app
